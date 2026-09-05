@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Umberlull Terms</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ground:#F5F6F1;--surface:#FFFFFF;--ink:#1B211C;--ink-soft:#4A544B;--ink-faint:#7C877D;
+    --line:#DDE3D7;--accent:#4F6F52;--accent-soft:#E7EEE4;
+    --serif-display:'Fraunces', Georgia, 'Times New Roman', serif;
+    --serif-body:'Source Serif 4', Georgia, 'Times New Roman', serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ground:#12160F;--surface:#171D14;--ink:#E7ECE2;--ink-soft:#AEB8A6;--ink-faint:#7C8B76;
+      --line:#2B3427;--accent:#8FB08F;--accent-soft:#1E2B1E;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--serif-body);font-size:17px;line-height:1.65;}
+  a{color:var(--accent);}
+  .wrap{max-width:760px;margin:0 auto;padding:64px 28px 120px;}
+  header.doc-head{margin-bottom:56px;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:var(--serif-display);font-weight:600;font-size:15px;letter-spacing:0.04em;text-transform:uppercase;color:var(--accent);margin-bottom:28px;text-decoration:none;}
+  .brand .mark{width:9px;height:11px;border-radius:50% 50% 50% 0;background:var(--accent);transform:rotate(45deg);flex:none;}
+  h1{font-family:var(--serif-display);font-weight:600;font-size:clamp(2.1rem,5vw,2.9rem);line-height:1.08;letter-spacing:-0.01em;margin:0 0 14px;text-wrap:balance;}
+  .meta{font-family:var(--serif-body);font-style:italic;color:var(--ink-faint);font-size:15px;}
+  nav.toc{margin:40px 0 8px;padding:22px 24px;background:var(--surface);border:1px solid var(--line);border-radius:4px;}
+  nav.toc .toc-label{font-family:var(--serif-display);font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:12px;display:block;}
+  nav.toc ol{margin:0;padding:0;list-style:none;columns:2;column-gap:24px;}
+  nav.toc li{margin-bottom:8px;break-inside:avoid;}
+  nav.toc a{text-decoration:none;color:var(--ink-soft);font-size:15px;}
+  nav.toc a:hover{color:var(--accent);}
+  nav.toc .num{font-variant-numeric:tabular-nums;color:var(--ink-faint);margin-right:6px;}
+  section{margin-top:52px;padding-top:4px;scroll-margin-top:24px;}
+  section + section{border-top:1px solid var(--line);padding-top:48px;}
+  h2{font-family:var(--serif-display);font-weight:600;font-size:1.4rem;display:flex;align-items:baseline;gap:12px;margin:0 0 18px;}
+  h2 .num{font-variant-numeric:tabular-nums;color:var(--accent);font-size:0.85em;}
+  p{margin:0 0 16px;max-width:66ch;}
+  p.lead{color:var(--ink-soft);}
+  ul{margin:0 0 16px;padding-left:22px;max-width:64ch;}
+  li{margin-bottom:8px;}
+  strong{color:var(--ink);font-weight:600;}
+  .callout{background:var(--accent-soft);border-left:3px solid var(--accent);padding:16px 20px;border-radius:0 4px 4px 0;font-size:15.5px;color:var(--ink-soft);max-width:64ch;}
+  footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-faint);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+  footer a{color:var(--ink-soft);}
+  ::selection{background:var(--accent-soft);color:var(--ink);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="doc-head">
+    <a class="brand" href="index.html"><span class="mark"></span> Umberlull</a>
+    <h1>Terms of Service</h1>
+    <div class="meta">Effective &amp; last updated: September 5, 2026</div>
+  </header>
+
+  <p class="lead">Umberlull produces and distributes original ambient nature-sound video content (rain, forest, and related soundscapes) across YouTube, TikTok, Instagram, and Facebook. These Terms cover the API integrations and automated tooling Umberlull uses to publish that content to its own accounts on those platforms.</p>
+
+  <nav class="toc" aria-label="Table of contents">
+    <span class="toc-label">Contents</span>
+    <ol>
+      <li><a href="#acceptance"><span class="num">01</span>Acceptance of terms</a></li>
+      <li><a href="#service"><span class="num">02</span>Description of service</a></li>
+      <li><a href="#ownership"><span class="num">03</span>Content ownership</a></li>
+      <li><a href="#use"><span class="num">04</span>Acceptable use</a></li>
+      <li><a href="#accounts"><span class="num">05</span>Connected accounts</a></li>
+      <li><a href="#warranty"><span class="num">06</span>No warranty</a></li>
+      <li><a href="#liability"><span class="num">07</span>Limitation of liability</a></li>
+      <li><a href="#changes"><span class="num">08</span>Changes to these terms</a></li>
+      <li><a href="#contact"><span class="num">09</span>Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="acceptance">
+    <h2><span class="num">01</span> Acceptance of terms</h2>
+    <p>By connecting a social media account or API integration to Umberlull's publishing tools, you agree to these Terms. If you do not agree, do not connect an account or use the integration.</p>
+  </section>
+
+  <section id="service">
+    <h2><span class="num">02</span> Description of service</h2>
+    <p>Umberlull's integration automates the publishing of Umberlull's own original video content to social platforms that Umberlull operates or controls. This is a single-owner content pipeline: it authenticates to Umberlull's own accounts via each platform's official API (including TikTok's Content Posting API) and uploads finished video files with associated titles, descriptions, and captions.</p>
+    <p>This integration is not offered as a public product, and it does not publish content on behalf of any third party or unaffiliated account.</p>
+  </section>
+
+  <section id="ownership">
+    <h2><span class="num">03</span> Content ownership</h2>
+    <p>All video, audio, and imagery published through this integration is either originally produced by Umberlull or sourced under a license (including royalty-free and CC0 sources) that permits its use in this way. Umberlull is responsible for the content it publishes.</p>
+  </section>
+
+  <section id="use">
+    <h2><span class="num">04</span> Acceptable use</h2>
+    <p>The integration is used only to:</p>
+    <ul>
+      <li>Upload and publish Umberlull's own finished video content</li>
+      <li>Set the associated title, description, caption, and thumbnail for that content</li>
+      <li>Read basic account and post-status information needed to confirm a publish succeeded</li>
+    </ul>
+    <p>It is not used to scrape, message, follow, or interact with other accounts, or to publish content on any account other than Umberlull's own.</p>
+  </section>
+
+  <section id="accounts">
+    <h2><span class="num">05</span> Connected accounts</h2>
+    <p>Only accounts that Umberlull owns and directly controls are connected to this integration. Access can be revoked at any time from the relevant platform's own app-permissions settings (for example, TikTok's connected-apps page), which immediately stops the integration from publishing further content.</p>
+  </section>
+
+  <section id="warranty">
+    <h2><span class="num">06</span> No warranty</h2>
+    <div class="callout">This integration and its tooling are provided "as is," without warranty of any kind, express or implied, including warranties of merchantability, fitness for a particular purpose, or non-infringement.</div>
+  </section>
+
+  <section id="liability">
+    <h2><span class="num">07</span> Limitation of liability</h2>
+    <p>To the fullest extent permitted by law, Umberlull is not liable for any indirect, incidental, or consequential damages arising from the use of this integration, including any interruption, delay, or failure of a scheduled publish.</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">08</span> Changes to these terms</h2>
+    <p>These Terms may be updated as the integration or the platforms it connects to change. The effective date above reflects the most recent revision.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">09</span> Contact</h2>
+    <p>Questions about these Terms can be sent to <strong>[insert contact email]</strong>.</p>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 Umberlull</span>
+    <a href="index.html">Back to home</a>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Umberlull Privacy</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ground:#F5F6F1;--surface:#FFFFFF;--ink:#1B211C;--ink-soft:#4A544B;--ink-faint:#7C877D;
+    --line:#DDE3D7;--accent:#4F6F52;--accent-soft:#E7EEE4;
+    --serif-display:'Fraunces', Georgia, 'Times New Roman', serif;
+    --serif-body:'Source Serif 4', Georgia, 'Times New Roman', serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --ground:#12160F;--surface:#171D14;--ink:#E7ECE2;--ink-soft:#AEB8A6;--ink-faint:#7C8B76;
+      --line:#2B3427;--accent:#8FB08F;--accent-soft:#1E2B1E;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--serif-body);font-size:17px;line-height:1.65;}
+  a{color:var(--accent);}
+  .wrap{max-width:760px;margin:0 auto;padding:64px 28px 120px;}
+  header.doc-head{margin-bottom:56px;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:var(--serif-display);font-weight:600;font-size:15px;letter-spacing:0.04em;text-transform:uppercase;color:var(--accent);margin-bottom:28px;text-decoration:none;}
+  .brand .mark{width:9px;height:11px;border-radius:50% 50% 50% 0;background:var(--accent);transform:rotate(45deg);flex:none;}
+  h1{font-family:var(--serif-display);font-weight:600;font-size:clamp(2.1rem,5vw,2.9rem);line-height:1.08;letter-spacing:-0.01em;margin:0 0 14px;text-wrap:balance;}
+  .meta{font-family:var(--serif-body);font-style:italic;color:var(--ink-faint);font-size:15px;}
+  nav.toc{margin:40px 0 8px;padding:22px 24px;background:var(--surface);border:1px solid var(--line);border-radius:4px;}
+  nav.toc .toc-label{font-family:var(--serif-display);font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:12px;display:block;}
+  nav.toc ol{margin:0;padding:0;list-style:none;columns:2;column-gap:24px;}
+  nav.toc li{margin-bottom:8px;break-inside:avoid;}
+  nav.toc a{text-decoration:none;color:var(--ink-soft);font-size:15px;}
+  nav.toc a:hover{color:var(--accent);}
+  nav.toc .num{font-variant-numeric:tabular-nums;color:var(--ink-faint);margin-right:6px;}
+  section{margin-top:52px;padding-top:4px;scroll-margin-top:24px;}
+  section + section{border-top:1px solid var(--line);padding-top:48px;}
+  h2{font-family:var(--serif-display);font-weight:600;font-size:1.4rem;display:flex;align-items:baseline;gap:12px;margin:0 0 18px;}
+  h2 .num{font-variant-numeric:tabular-nums;color:var(--accent);font-size:0.85em;}
+  p{margin:0 0 16px;max-width:66ch;}
+  p.lead{color:var(--ink-soft);}
+  ul{margin:0 0 16px;padding-left:22px;max-width:64ch;}
+  li{margin-bottom:8px;}
+  strong{color:var(--ink);font-weight:600;}
+  table{border-collapse:collapse;width:100%;max-width:64ch;margin:0 0 20px;font-size:15.5px;}
+  th,td{text-align:left;padding:10px 14px 10px 0;border-bottom:1px solid var(--line);vertical-align:top;}
+  th{font-family:var(--serif-display);font-weight:600;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-faint);}
+  td{color:var(--ink-soft);}
+  td strong{color:var(--ink);}
+  .callout{background:var(--accent-soft);border-left:3px solid var(--accent);padding:16px 20px;border-radius:0 4px 4px 0;font-size:15.5px;color:var(--ink-soft);max-width:64ch;}
+  footer{margin-top:64px;padding-top:28px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-faint);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+  footer a{color:var(--ink-soft);}
+  ::selection{background:var(--accent-soft);color:var(--ink);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="doc-head">
+    <a class="brand" href="index.html"><span class="mark"></span> Umberlull</a>
+    <h1>Privacy Policy</h1>
+    <div class="meta">Effective &amp; last updated: September 5, 2026</div>
+  </header>
+
+  <p class="lead">Umberlull's publishing integration connects to social media platforms (including TikTok's Content Posting API) solely to upload Umberlull's own video content to Umberlull's own accounts. This policy explains what data that requires and how it's handled.</p>
+
+  <nav class="toc" aria-label="Table of contents">
+    <span class="toc-label">Contents</span>
+    <ol>
+      <li><a href="#overview"><span class="num">01</span>Overview</a></li>
+      <li><a href="#data"><span class="num">02</span>Data we collect</a></li>
+      <li><a href="#use"><span class="num">03</span>How it's used</a></li>
+      <li><a href="#storage"><span class="num">04</span>Storage &amp; security</a></li>
+      <li><a href="#sharing"><span class="num">05</span>Third-party sharing</a></li>
+      <li><a href="#retention"><span class="num">06</span>Retention &amp; revocation</a></li>
+      <li><a href="#changes"><span class="num">07</span>Changes to this policy</a></li>
+      <li><a href="#contact"><span class="num">08</span>Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="overview">
+    <h2><span class="num">01</span> Overview</h2>
+    <p>This is not a consumer-facing app. There are no end users or site visitors whose personal data is collected. The only accounts connected to this integration are Umberlull's own social media accounts, connected by Umberlull for the purpose of publishing Umberlull's own content.</p>
+  </section>
+
+  <section id="data">
+    <h2><span class="num">02</span> Data we collect</h2>
+    <table>
+      <tr><th>Data</th><th>Why</th></tr>
+      <tr><td><strong>OAuth access &amp; refresh tokens</strong></td><td>Issued by each platform (TikTok, YouTube, Meta) when Umberlull authorizes the integration; used to authenticate future publish requests without repeated logins.</td></tr>
+      <tr><td><strong>Account identifiers</strong></td><td>The platform-assigned ID of the connected Umberlull account, used to target the correct account when publishing.</td></tr>
+      <tr><td><strong>Post status metadata</strong></td><td>Publish IDs and processing status returned by the platform, used only to confirm an upload succeeded.</td></tr>
+    </table>
+    <p>No data is collected from viewers, followers, or any account other than Umberlull's own.</p>
+  </section>
+
+  <section id="use">
+    <h2><span class="num">03</span> How it's used</h2>
+    <p>The data above is used exclusively to authenticate to Umberlull's connected accounts and publish Umberlull's finished video content, with its title, description, and caption. It is not used for advertising, analytics resale, profiling, or any purpose beyond operating the publishing pipeline itself.</p>
+  </section>
+
+  <section id="storage">
+    <h2><span class="num">04</span> Storage &amp; security</h2>
+    <p>Tokens are stored in a local environment configuration file on infrastructure Umberlull directly controls, and are not stored in any third-party database or analytics service.</p>
+  </section>
+
+  <section id="sharing">
+    <h2><span class="num">05</span> Third-party sharing</h2>
+    <div class="callout">Umberlull does not sell, rent, or share this data with any third party. It is used only for direct communication with the platform APIs (TikTok, YouTube, Meta) that issued it.</div>
+  </section>
+
+  <section id="retention">
+    <h2><span class="num">06</span> Retention &amp; revocation</h2>
+    <p>Tokens are retained for as long as the integration remains connected. Access can be revoked at any time from the relevant platform's own connected-apps settings (for example, TikTok's app permissions page), which immediately invalidates the token and stops any further use.</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">07</span> Changes to this policy</h2>
+    <p>This policy may be updated as the integration or the platforms it connects to change. The effective date above reflects the most recent revision.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">08</span> Contact</h2>
+    <p>Questions about this policy can be sent to <strong>[insert contact email]</strong>.</p>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 Umberlull</span>
+    <a href="index.html">Back to home</a>
+  </footer>
+</div>
+</body>
+</html>
